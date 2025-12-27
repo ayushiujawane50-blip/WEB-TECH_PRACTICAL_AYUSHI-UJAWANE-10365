@@ -1,0 +1,38 @@
+<!-- Practical 9  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Webpage</title>
+
+    <style>
+        .box {
+            width: 80%;
+            padding: 20px;
+            background: lightblue;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* MEDIA QUERY for screens smaller than 600px */
+        @media (max-width: 600px) {
+            .box {
+                background: pink;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Responsive Web Design</h1>
+
+<div class="box">
+    Resize the browser to see background color change!
+</div>
+
+</body>
+</html>
