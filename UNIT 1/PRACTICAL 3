@@ -1,0 +1,39 @@
+<!-- Practical 3  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Layout</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        table {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Table-Based Layout</h1>
+
+<table>
+    <tr>
+        <th colspan="3" align="center">Header (Merged Cell)</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Left Panel</td>
+        <td>Main Content</td>
+        <td>Right Panel</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">Footer Area</td>
+    </tr>
+</table>
+
+</body>
+</html>
