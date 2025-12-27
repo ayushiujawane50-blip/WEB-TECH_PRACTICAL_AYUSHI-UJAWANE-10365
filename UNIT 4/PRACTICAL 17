@@ -1,0 +1,43 @@
+<!-- Practical 17  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listeners Demo</title>
+
+    <script>
+        function mouseOverHandler() {
+            document.getElementById("demo").innerHTML = "Mouse is over the box!";
+        }
+
+        function mouseOutHandler() {
+            document.getElementById("demo").innerHTML = "Mouse left the box!";
+        }
+
+        function keyPressHandler(event) {
+            document.getElementById("demo").innerHTML = "You pressed: " + event.key;
+        }
+
+        window.onload = function() {
+            var box = document.getElementById("box");
+            box.addEventListener("mouseover", mouseOverHandler);
+            box.addEventListener("mouseout", mouseOutHandler);
+            window.addEventListener("keypress", keyPressHandler);
+        };
+    </script>
+
+</head>
+<body>
+
+<h1>Event Listeners Example</h1>
+
+<div id="box" style="width:200px;height:100px;background-color:lightblue;text-align:center;line-height:100px;">
+    Hover over me
+</div>
+
+<p id="demo"></p>
+
+</body>
+</html>
