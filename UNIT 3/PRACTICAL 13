@@ -1,0 +1,40 @@
+<!-- Practical 13  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Functions & Scope</title>
+
+    <script>
+        // Function to greet
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        function demoScope() {
+            var x = "Var variable";
+            let y = "Let variable";
+            const z = "Const variable";
+
+            document.getElementById("funcResult").innerHTML = greet("Ayushi Ujawane");
+            document.getElementById("scopeResult").innerHTML = x + " | " + y + " | " + z;
+        }
+    </script>
+
+</head>
+<body>
+
+<h1>Functions & Variable Scope</h1>
+
+<button onclick="demoScope()">Run Demo</button>
+
+<h3>Function Result:</h3>
+<p id="funcResult"></p>
+
+<h3>Scope Result:</h3>
+<p id="scopeResult"></p>
+
+</body>
+</html>
