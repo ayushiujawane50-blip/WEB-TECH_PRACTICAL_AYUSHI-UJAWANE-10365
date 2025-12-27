@@ -1,0 +1,66 @@
+<!-- Practical 12  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Conditional & Loops</title>
+
+    <script>
+        function demo() {
+            var num = parseInt(document.getElementById("num").value);
+
+            // Conditional
+            if(num % 2 === 0) {
+                alert(num + " is Even");
+            } else {
+                alert(num + " is Odd");
+            }
+
+            // For loop
+            var forResult = "";
+            for(var i=1; i<=5; i++) {
+                forResult += i + " ";
+            }
+            document.getElementById("forLoop").innerHTML = forResult;
+
+            // While loop
+            var count = 1;
+            var whileResult = "";
+            while(count <= 5) {
+                whileResult += count + " ";
+                count++;
+            }
+            document.getElementById("whileLoop").innerHTML = whileResult;
+
+            // Do-while loop
+            var j = 1;
+            var doResult = "";
+            do {
+                doResult += j + " ";
+                j++;
+            } while(j <= 5);
+            document.getElementById("doLoop").innerHTML = doResult;
+        }
+    </script>
+
+</head>
+<body>
+
+<h1>Conditional & Loops Demo</h1>
+
+Enter a number: <input type="number" id="num"><br><br>
+<button onclick="demo()">Run</button>
+
+<h3>For Loop:</h3>
+<p id="forLoop"></p>
+
+<h3>While Loop:</h3>
+<p id="whileLoop"></p>
+
+<h3>Do-While Loop:</h3>
+<p id="doLoop"></p>
+
+</body>
+</html>
