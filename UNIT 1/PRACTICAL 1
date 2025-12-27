@@ -1,0 +1,27 @@
+<!-- Practical 1  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML Page</title>
+</head>
+<body>
+
+<h1>Welcome to My Web Page</h1>
+<h2>This is a Sub Heading</h2>
+
+<p>
+    Hello! My name is <b>Ayushi Ujawane</b>.  
+    This is a simple HTML page created using 
+    <i>headings</i>, <u>paragraphs</u>, and <b>text formatting</b> tags.
+</p>
+
+<p>
+    HTML stands for <strong>HyperText Markup Language</strong>.  
+    It is used to design web pages.
+</p>
+
+</body>
+</html>
