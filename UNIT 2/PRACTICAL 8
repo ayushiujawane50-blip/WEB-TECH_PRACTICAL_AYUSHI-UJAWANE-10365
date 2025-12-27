@@ -1,0 +1,55 @@
+<!-- Practical 8  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+
+    <style>
+        /* Universal selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* Class selector */
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* ID selector */
+        #main-title {
+            text-align: center;
+            color: blue;
+        }
+
+        /* Descendant selector */
+        div p {
+            color: green;
+        }
+
+        /* Group selector */
+        h2, h3 {
+            color: purple;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1 id="main-title">CSS Selectors Demo</h1>
+
+<h2>Class Selector Example</h2>
+<p class="highlight">This text uses a class selector.</p>
+
+<h3>ID Selector Example</h3>
+<p>This text uses normal styling.</p>
+
+<div>
+    <p>This paragraph is inside a div (descendant selector applied).</p>
+</div>
+
+</body>
+</html>
