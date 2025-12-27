@@ -1,0 +1,44 @@
+<!-- Practical 16  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show/Hide Elements & Toggle Class</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function toggleVisibility() {
+            var elem = document.getElementById("myDiv");
+            if(elem.style.display === "none") {
+                elem.style.display = "block";
+            } else {
+                elem.style.display = "none";
+            }
+        }
+
+        function toggleClass() {
+            var elem = document.getElementById("myDiv");
+            elem.classList.toggle("highlight");
+        }
+    </script>
+</head>
+<body>
+
+<h1>Show/Hide & Toggle Class Demo</h1>
+
+<div id="myDiv" style="padding: 20px; border: 1px solid black;">
+    This is a sample div element.
+</div><br>
+
+<button onclick="toggleVisibility()">Show/Hide</button>
+<button onclick="toggleClass()">Toggle Class</button>
+
+</body>
+</html>
