@@ -1,0 +1,37 @@
+<!-- Practical 6  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Types</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CSS Styling Methods</h1>
+
+<!-- INLINE CSS -->
+<p style="color: red;">This is an inline styled paragraph.</p>
+
+<p>This paragraph uses internal CSS styling.</p>
+
+<p>This text will get styling from external CSS (style.css file).</p>
+
+</body>
+</html>
