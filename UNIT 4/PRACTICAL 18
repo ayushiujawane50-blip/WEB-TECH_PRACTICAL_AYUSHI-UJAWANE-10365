@@ -1,0 +1,46 @@
+<!-- Practical 18  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Element Manipulation</title>
+
+    <script>
+        function addElement() {
+            var newPara = document.createElement("p");
+            newPara.innerHTML = "This is a new paragraph added dynamically!";
+            document.getElementById("container").appendChild(newPara);
+        }
+
+        function removeElement() {
+            var container = document.getElementById("container");
+            if(container.lastChild) {
+                container.removeChild(container.lastChild);
+            }
+        }
+
+        function modifyElement() {
+            var container = document.getElementById("container");
+            if(container.firstChild) {
+                container.firstChild.innerHTML = "First paragraph modified!";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<h1>DOM Manipulation Example</h1>
+
+<div id="container">
+    <p>Original paragraph</p>
+</div><br>
+
+<button onclick="addElement()">Add Paragraph</button>
+<button onclick="removeElement()">Remove Paragraph</button>
+<button onclick="modifyElement()">Modify First Paragraph</button>
+
+</body>
+</html>
