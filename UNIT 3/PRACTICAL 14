@@ -1,0 +1,40 @@
+<!-- Practical 14  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            if(name === "") {
+                alert("Name cannot be empty!");
+                return false;
+            }
+            alert("Form submitted successfully!");
+            return true;
+        }
+
+        function checkInput() {
+            var name = document.getElementById("name").value;
+            if(name.length < 3) {
+                alert("Name too short!");
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<h1>Form Validation Example</h1>
+
+<form onsubmit="return validateForm()">
+    Name: <input type="text" id="name" oninput="checkInput()"><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
