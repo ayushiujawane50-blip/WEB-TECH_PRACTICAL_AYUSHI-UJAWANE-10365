@@ -1,0 +1,31 @@
+<!-- Practical 15  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+
+    <script>
+        function changeContent() {
+            // Using getElementById
+            document.getElementById("para1").innerHTML = "Content changed using getElementById()";
+
+            // Using querySelector
+            document.querySelector("#para2").innerHTML = "Content changed using querySelector()";
+        }
+    </script>
+
+</head>
+<body>
+
+<h1>DOM Manipulation Demo</h1>
+
+<p id="para1">Original Paragraph 1</p>
+<p id="para2">Original Paragraph 2</p>
+
+<button onclick="changeContent()">Change Content</button>
+
+</body>
+</html>
