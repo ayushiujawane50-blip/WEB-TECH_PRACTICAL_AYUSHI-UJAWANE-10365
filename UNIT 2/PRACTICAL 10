@@ -1,0 +1,41 @@
+<!-- Practical 10  
+     Name: Ayushi Ujawane-10365  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Div & Span Layout</title>
+
+    <style>
+        .header {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        span.highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>Website Header</h1>
+</div>
+
+<div class="content">
+    <p>This is the main content area using a <span class="highlight">span tag</span> for inline styling.</p>
+</div>
+
+</body>
+</html>
